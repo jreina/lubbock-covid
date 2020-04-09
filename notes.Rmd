@@ -2,12 +2,14 @@
 title: "COVID-19 in Lubbock"
 output: html_notebook
 ---
-
-I've been keeping this data in JSON format as press releases come out from the [City of Lubbock](https://twitter.com/cityoflubbock).
+## What is this?
+This is an R notebook to help visualize the numbers regarding COVID-19 in Lubbock, TX. I've been keeping this data in JSON format as press releases come out from the [City of Lubbock](https://twitter.com/cityoflubbock). The code for this notebook can be found here -> [https://github.com/jreina/lubbock-covid](https://github.com/jreina/lubbock-covid).
 
 Last Updated: `r Sys.time()`
 
-```{r, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+## Chart
+
+```{r, results='hide', message=FALSE, warning=FALSE}
 library('jsonlite')
 library('tibble')
 
@@ -25,6 +27,13 @@ lines(dates, cases$recovered, col = "green", lwd = 2.5)
 lines(dates, cases$deaths, col = "red", lwd = 2.5)
 legend(x = 'topleft', legend = c('Confirmed', 'Recovered', 'Deaths'), 
        col = c('black', 'green', 'red'), lty = 1, lwd = 2.5)
+```
+
+## Data
+
+```{r, results='asis', message=FALSE, warning=FALSE}
+library(xtable)
+print(xtable(cases), type = "html")
 ```
 
 ### Disclaimer
