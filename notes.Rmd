@@ -11,7 +11,6 @@ Last Updated: `r Sys.time()`
 
 ```{r, results='hide', message=FALSE, warning=FALSE}
 library('jsonlite')
-library('tibble')
 
 cases <- as.data.frame(fromJSON("./data/cases.json"))
 dates <-as.Date(paste(cases$date, cases$time), "%m/%d/%Y %H:%M")
