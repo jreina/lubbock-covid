@@ -248,5 +248,32 @@
     "recovered": 101,
     "deaths": 28,
     "source": "https://twitter.com/cityoflubbock/status/1250934891035987981"
+  },
+  {
+    "date": "04/17/2020",
+    "time": "16:00",
+    "confirmed": 407,
+    "suspected": 0,
+    "recovered": 107,
+    "deaths": 28,
+    "source": "https://twitter.com/cityoflubbock/status/1251286155049525250"
+  },
+  {
+    "date": "04/18/2020",
+    "time": "16:00",
+    "confirmed": 419,
+    "suspected": 0,
+    "recovered": 107,
+    "deaths": 28,
+    "source": "https://twitter.com/cityoflubbock/status/1251622127855374336"
+  },
+  {
+    "date": "04/19/2020",
+    "time": "16:00",
+    "confirmed": 430,
+    "suspected": 0,
+    "recovered": 107,
+    "deaths": 32,
+    "source": "https://twitter.com/cityoflubbock/status/1251982449728520194"
   }
 ]
