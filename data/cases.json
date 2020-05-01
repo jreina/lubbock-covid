@@ -374,5 +374,14 @@
     "recovered": 224,
     "deaths": 43,
     "source": "https://twitter.com/cityoflubbock/status/1255994773867020293"
+  },
+  {
+    "date": "05/01/2020",
+    "time": "16:00",
+    "confirmed": 543,
+    "suspected": 0,
+    "recovered": 259,
+    "deaths": 43,
+    "source": "https://twitter.com/cityoflubbock/status/1256355162274267138"
   }
 ]
