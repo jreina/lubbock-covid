@@ -410,5 +410,131 @@
     "recovered": 255,
     "deaths": 45,
     "source": "https://twitter.com/cityoflubbock/status/1257443149921878017"
+  },
+  {
+    "date": "05/05/2020",
+    "time": "16:00",
+    "confirmed": 567,
+    "suspected": 0,
+    "recovered": 272,
+    "deaths": 46,
+    "source": "https://twitter.com/cityoflubbock/status/1257800839785328642"
+  },
+  {
+    "date": "05/06/2020",
+    "time": "16:00",
+    "confirmed": 575,
+    "suspected": 0,
+    "recovered": 283,
+    "deaths": 47,
+    "source": "https://twitter.com/cityoflubbock/status/1258166166800998402"
+  },
+  {
+    "date": "05/07/2020",
+    "time": "16:00",
+    "confirmed": 582,
+    "suspected": 0,
+    "recovered": 294,
+    "deaths": 48,
+    "source": "https://twitter.com/cityoflubbock/status/1258524354414956546"
+  },
+  {
+    "date": "05/08/2020",
+    "time": "16:00",
+    "confirmed": 583,
+    "suspected": 0,
+    "recovered": 304,
+    "deaths": 49,
+    "source": "https://twitter.com/cityoflubbock/status/1258894756198985729"
+  },
+  {
+    "date": "05/09/2020",
+    "time": "16:00",
+    "confirmed": 589,
+    "suspected": 0,
+    "recovered": 308,
+    "deaths": 49,
+    "source": "https://twitter.com/cityoflubbock/status/1259235906021658625"
+  },
+  {
+    "date": "05/10/2020",
+    "time": "16:00",
+    "confirmed": 592,
+    "suspected": 0,
+    "recovered": 308,
+    "deaths": 49,
+    "source": "https://twitter.com/cityoflubbock/status/1259600682878935040"
+  },
+  {
+    "date": "05/11/2020",
+    "time": "16:00",
+    "confirmed": 598,
+    "suspected": 0,
+    "recovered": 314,
+    "deaths": 50,
+    "source": "https://twitter.com/cityoflubbock/status/1259972185747316736"
+  },
+  {
+    "date": "05/12/2020",
+    "time": "16:00",
+    "confirmed": 605,
+    "suspected": 0,
+    "recovered": 328,
+    "deaths": 50,
+    "source": "https://twitter.com/cityoflubbock/status/1260339459717038092"
+  },
+  {
+    "date": "05/13/2020",
+    "time": "16:00",
+    "confirmed": 607,
+    "suspected": 0,
+    "recovered": 335,
+    "deaths": 50,
+    "source": "https://twitter.com/cityoflubbock/status/1260697308808781824"
+  },
+  {
+    "date": "05/14/2020",
+    "time": "16:00",
+    "confirmed": 614,
+    "suspected": 0,
+    "recovered": 335,
+    "deaths": 50,
+    "source": "https://twitter.com/cityoflubbock/status/1261062346371469312"
+  },
+  {
+    "date": "05/15/2020",
+    "time": "16:00",
+    "confirmed": 616,
+    "suspected": 0,
+    "recovered": 373,
+    "deaths": 50,
+    "source": "https://twitter.com/cityoflubbock/status/1261421686760579074"
+  },
+  {
+    "date": "05/16/2020",
+    "time": "16:00",
+    "confirmed": 619,
+    "suspected": 0,
+    "recovered": 373,
+    "deaths": 50,
+    "source": "https://twitter.com/cityoflubbock/status/1261784141277859840"
+  },
+  {
+    "date": "05/17/2020",
+    "time": "16:00",
+    "confirmed": 619,
+    "suspected": 0,
+    "recovered": 373,
+    "deaths": 50,
+    "source": "https://twitter.com/cityoflubbock/status/1262122239463481347"
+  },
+  {
+    "date": "05/18/2020",
+    "time": "16:00",
+    "confirmed": 624,
+    "suspected": 0,
+    "recovered": 391,
+    "deaths": 50,
+    "source": "https://twitter.com/cityoflubbock/status/1262515230040612865"
   }
 ]
