@@ -732,7 +732,7 @@
     "confirmed": 759,
     "suspected": 0,
     "recovered": 516,
-    "deaths": 50,
+    "deaths": 51,
     "source": "https://twitter.com/cityoflubbock/status/1270475308072931329"
   },
   {
@@ -741,7 +741,7 @@
     "confirmed": 775,
     "suspected": 0,
     "recovered": 522,
-    "deaths": 50,
+    "deaths": 51,
     "source": "https://twitter.com/cityoflubbock/status/1270839842453233665"
   },
   {
@@ -797,5 +797,14 @@
     "recovered": 566,
     "deaths": 51,
     "source": "https://twitter.com/cityoflubbock/status/1273034312007516161"
+  },
+  {
+    "date": "06/17/2020",
+    "time": "16:00",
+    "confirmed": 1031,
+    "suspected": 0,
+    "recovered": 582,
+    "deaths": 51,
+    "source": "https://twitter.com/cityoflubbock/status/1273395610767499271"
   }
 ]
