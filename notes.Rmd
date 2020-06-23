@@ -16,6 +16,31 @@ cases$difference = c(0, diff(cases$confirmed))
 cases <- cases[, c(1, 3, 8, 5, 6, 7)]
 ```
 
+## Active cases vs recoveries by date
+```{r, results='hide', message=FALSE, warning=FALSE}
+plot.new()
+
+plot(range(dates), range(cases$confirmed))
+
+legend('topleft', legend = c('Active cases', 'Recoveries'), col = c('red', 'blue'), lty = 1, lwd = 2.5)
+
+lines(x = dates, y = cases$confirmed - cases$recovered - cases$deaths, lwd = 2.5, col = 'red', lty = 1)
+lines(x = dates, y = cases$recovered, lwd = 2.5, col = 'blue', lty = 1)
+```
+
+## New confirmed cases by date
+```{r, results='hide', message=FALSE, warning=FALSE}
+plot.new()
+
+plot(range(dates), 
+     range(cases$difference), lwd = 1, col = 'blue', lty = 1)
+
+legend('topleft', legend = c('New cases'),
+       col = c('blue'), lty = 1, lwd = 2.5)
+
+lines(x = dates, y = cases$difference, lwd = 2.5, col = 'blue', lty = 1)
+```
+
 ## Cumulative statistics by date
 
 ```{r, results='hide', message=FALSE, warning=FALSE}
@@ -32,19 +57,6 @@ lines(x = dates, y = cases$difference, lwd = 1, col = 'purple', lty = 2)
 
 legend('topleft', legend = c('Confirmed', 'Recovered', 'Deaths', 'Difference'), 
        col = c('black', 'green', 'red', 'purple'), lty = c(1, 1, 1, 2), lwd = c(2.5, 2.5, 2.5, 1))
-```
-
-## New confirmed cases by date
-```{r, results='hide', message=FALSE, warning=FALSE}
-plot.new()
-
-plot(range(dates), 
-     range(cases$difference), lwd = 1, col = 'blue', lty = 1)
-
-legend('topleft', legend = c('Difference'),
-       col = c('blue'), lty = 1, lwd = 2.5)
-
-lines(x = dates, y = cases$difference, lwd = 2.5, col = 'blue', lty = 1)
 ```
 
 ## Data
