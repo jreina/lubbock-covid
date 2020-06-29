@@ -14,16 +14,18 @@ cases <- as.data.frame(fromJSON("./data/cases.json"))
 dates <-as.Date(paste(cases$date, cases$time), "%m/%d/%Y %H:%M")
 cases$difference = c(0, diff(cases$confirmed))
 cases <- cases[, c(1, 3, 8, 5, 6, 7)]
+newCases <- cases$confirmed - cases$recovered - cases$deaths
 ```
 
 ## Active cases vs recoveries by date
 ```{r, results='hide', message=FALSE, warning=FALSE}
 plot.new()
 
-plot(x = dates, y = cases$confirmed - cases$recovered - cases$deaths,
-     xlim = range(dates), ylim = range(cases$confirmed),
+plot(x = dates, y = newCases,
+     xlim = range(dates), ylim = range(c(newCases, cases$recovered)),
      xlab = 'Date', ylab = 'Count',
-     type = 'l', lwd = 2.5, col = 'red', lty = 1)
+     type = 'l', lwd = 2.5, col = 'red', lty = 1,
+     main = 'Active Cases vs. Cumulative Recoveries')
 lines(x = dates, y = cases$recovered, lwd = 2.5, col = 'blue', lty = 1)
 
 legend('topleft', legend = c('Active cases', 'Recoveries'), col = c('red', 'blue'), lty = 1, lwd = 2.5)
@@ -36,7 +38,8 @@ plot.new()
 plot(x = dates, y = cases$difference,
      xlim = range(dates), ylim = range(cases$difference),
      xlab = 'Date', ylab = 'Count',
-     type = 'l', lwd = 2.5, col = 'blue', lty = 1)
+     type = 'l', lwd = 2.5, col = 'blue', lty = 1,
+     main = 'New Cases')
 
 legend('topleft', legend = c('New cases'),
        col = c('blue'), lty = 1, lwd = 2.5)
@@ -53,7 +56,8 @@ plot(x = dates,
      ylab = 'Count',
      col = 'black',
      type = 'l',
-     lwd = 2.5)
+     lwd = 2.5,
+     main = 'Cumulative Statistics (Lubbock County)')
 
 lines(dates, cases$recovered, col = "green", lwd = 2.5)
 lines(dates, cases$deaths, col = "red", lwd = 2.5)
