@@ -941,5 +941,32 @@
     "recovered": 1144,
     "deaths": 52,
     "source": "https://twitter.com/cityoflubbock/status/1278825798082932737"
+  },
+  {
+    "date": "07/03/2020",
+    "time": "16:00",
+    "confirmed": 2721,
+    "suspected": 0,
+    "recovered": 1326,
+    "deaths": 54,
+    "source": "https://www.everythinglubbock.com/news/local-news/city-of-lubbock-reports-101-new-covid-19-cases-2-additional-deaths/"
+  },
+  {
+    "date": "07/04/2020",
+    "time": "16:00",
+    "confirmed": 2827,
+    "suspected": 0,
+    "recovered": 1374,
+    "deaths": 54,
+    "source": "https://www.everythinglubbock.com/news/local-news/city-of-lubbock-confirms-106-new-cases-of-covid-19-saturday/"
+  },
+  {
+    "date": "07/04/2020",
+    "time": "16:00",
+    "confirmed": 2861,
+    "suspected": 0,
+    "recovered": 1389,
+    "deaths": 56,
+    "source": "https://www.lubbockonline.com/news/20200705/lubbock-confirms-2-more-deaths-linked-to-covid-19-34-new-cases"
   }
 ]
