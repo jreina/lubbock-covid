@@ -961,12 +961,21 @@
     "source": "https://www.everythinglubbock.com/news/local-news/city-of-lubbock-confirms-106-new-cases-of-covid-19-saturday/"
   },
   {
-    "date": "07/04/2020",
+    "date": "07/05/2020",
     "time": "16:00",
     "confirmed": 2861,
     "suspected": 0,
     "recovered": 1389,
     "deaths": 56,
     "source": "https://www.lubbockonline.com/news/20200705/lubbock-confirms-2-more-deaths-linked-to-covid-19-34-new-cases"
+  },
+  {
+    "date": "07/06/2020",
+    "time": "16:00",
+    "confirmed": 2918,
+    "suspected": 0,
+    "recovered": 1415,
+    "deaths": 56,
+    "source": "https://twitter.com/cityoflubbock/status/1280282570236796929"
   }
 ]
