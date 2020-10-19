@@ -11,9 +11,9 @@ Last Updated: `r Sys.time()`
 library('jsonlite')
 
 cases <- as.data.frame(fromJSON("./data/cases.json"))
-dates <-as.Date(paste(cases$date, cases$time), "%m/%d/%Y %H:%M")
+dates <-as.Date(cases$date, "%m/%d/%Y")
 cases$difference = c(0, diff(cases$confirmed))
-cases <- cases[, c(1, 3, 8, 5, 6, 7)]
+cases <- cases[, c(1, 3, 7, 4, 5, 6)]
 newCases <- cases$confirmed - cases$recovered - cases$deaths
 ```
 
