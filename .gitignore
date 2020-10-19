@@ -2,3 +2,5 @@
 notes.nb.html
 .RData 
 .Rhistory 
+node_modules/
+.env

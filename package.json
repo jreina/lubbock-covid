@@ -1,0 +1,27 @@
+{
+  "name": "lubbock-covid",
+  "version": "1.0.0",
+  "description": "_The data I've collected wrt covid-19 in Lubbock, TX_",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jreina/lubbock-covid.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jreina/lubbock-covid/issues"
+  },
+  "homepage": "https://github.com/jreina/lubbock-covid#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "dotenv": "^8.2.0",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "twitter": "^1.7.1"
+  }
+}
