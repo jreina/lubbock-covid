@@ -2,6 +2,9 @@ const dotenv = require("dotenv");
 const _ = require("lodash");
 const moment = require("moment");
 const Twitter = require("twitter");
+
+const existing = require("../data/cases.json");
+
 dotenv.config();
 
 const {
@@ -60,11 +63,12 @@ function parseTweet(twt) {
 }
 
 async function getLast200() {
+  const since_id = _.last(_.last(existing).source.split('/'));
   const tweets = await client.get("statuses/user_timeline", {
     screen_name: "cityoflubbock",
     count: 200,
     trim_user: 1,
-    //since_id: "1283898809005805569", // put tweet id here if it gets too far out of sync
+    since_id, //since_id: "1283898809005805569", // put tweet id here if it gets too far out of sync
     //max_id: "1299821117771743235", // stopping point
   });
   const covidRelated = tweets.filter((tweet) => tweet.text.includes("as of")); // probably a covid update in english
