@@ -1682,5 +1682,12 @@
     "deaths": 202,
     "date": "10/29/2020",
     "source": "https://twitter.com/cityoflubbock/status/1321937160279367680"
+  },
+  {
+    "confirmed": 19167,
+    "recovered": 15738,
+    "deaths": 206,
+    "date": "10/30/2020",
+    "source": "https://twitter.com/cityoflubbock/status/1322298613024907267"
   }
 ]
