@@ -1710,5 +1710,82 @@
     "deaths": 214,
     "date": "11/02/2020",
     "source": "https://twitter.com/cityoflubbock/status/1323401379004731393"
+  },
+  {
+    "confirmed": 20788,
+    "recovered": 16818,
+    "deaths": 222,
+    "date": "11/03/2020",
+    "source": "https://twitter.com/cityoflubbock/status/1323762109449195520"
+  },
+  {
+    "confirmed": 21319,
+    "recovered": 17029,
+    "deaths": 230,
+    "date": "11/04/2020",
+    "source": "https://twitter.com/cityoflubbock/status/1324130007111913473"
+  },
+  {
+    "confirmed": 21746,
+    "recovered": 17213,
+    "deaths": 234,
+    "date": "11/05/2020",
+    "source": "https://twitter.com/cityoflubbock/status/1324487359648440320"
+  },
+  {
+    "confirmed": 22184,
+    "recovered": 17414,
+    "deaths": 237,
+    "date": "11/06/2020",
+    "source": "https://twitter.com/cityoflubbock/status/1324846471590617093"
+  },
+  {
+    "confirmed": 22323,
+    "recovered": 17803,
+    "deaths": 243,
+    "date": "11/07/2020",
+    "source": "https://twitter.com/cityoflubbock/status/1325213852854726661"
+  },
+  {
+    "confirmed": 22634,
+    "recovered": 18054,
+    "deaths": 243,
+    "date": "11/08/2020",
+    "source": "https://twitter.com/cityoflubbock/status/1325575854416670721"
+  },
+  {
+    "confirmed": 23148,
+    "recovered": 18243,
+    "deaths": 248,
+    "date": "11/09/2020",
+    "source": "https://twitter.com/cityoflubbock/status/1325936123407982592"
+  },
+  {
+    "confirmed": 23479,
+    "recovered": 18676,
+    "deaths": 253,
+    "date": "11/10/2020",
+    "source": "https://twitter.com/cityoflubbock/status/1326300432323514369"
+  },
+  {
+    "confirmed": 23919,
+    "recovered": 19159,
+    "deaths": 257,
+    "date": "11/11/2020",
+    "source": "https://twitter.com/cityoflubbock/status/1326658663986106368"
+  },
+  {
+    "confirmed": 24347,
+    "recovered": 19406,
+    "deaths": 264,
+    "date": "11/12/2020",
+    "source": "https://twitter.com/cityoflubbock/status/1327031523086897152"
+  },
+  {
+    "confirmed": 24856,
+    "recovered": 19724,
+    "deaths": 269,
+    "date": "11/13/2020",
+    "source": "https://twitter.com/cityoflubbock/status/1327396325005156353"
   }
 ]
