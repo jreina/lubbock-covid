@@ -45,7 +45,7 @@ function parseTweet(twt) {
       .replace(",", "")
       .trim();
     deaths = +lines
-      .find((line) => /deaths/i.test(line))
+      .find((line) => /-( total)? deaths/i.test(line))
       .split(":")[1]
       .replace(",", "")
       .trim();
@@ -71,7 +71,7 @@ async function getLast200() {
     since_id, //since_id: "1283898809005805569", // put tweet id here if it gets too far out of sync
     //max_id: "1299821117771743235", // stopping point
   });
-  const covidRelated = tweets.filter((tweet) => tweet.text.includes("as of")); // probably a covid update in english
+  const covidRelated = tweets.filter((tweet) => tweet.text.toLowerCase().includes("cases confirmed:")); // probably a covid update in english
 
   const covidRelatedIds = covidRelated.map((t) => t.id_str); // main tweet id
 
@@ -81,7 +81,7 @@ async function getLast200() {
     tweet_mode: "extended",
   });
 
-  const data = _.orderBy(fullTweets.map(parseTweet), "id");
+  const data = fullTweets.map(parseTweet).sort((a, b) => moment(a.date).isBefore(b.date) ? -1 : 1);
   console.log(JSON.stringify(data));
 }
 
