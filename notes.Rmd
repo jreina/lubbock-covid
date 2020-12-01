@@ -13,7 +13,8 @@ library('jsonlite')
 cases <- as.data.frame(fromJSON("./data/cases.json"))
 dates <-as.Date(cases$date, "%m/%d/%Y")
 cases$difference = c(0, diff(cases$confirmed))
-cases <- cases[, c(1, 3, 7, 4, 5, 6)]
+dailyDeaths <- diff(c(0, cases$deaths))
+cases <- cases[, c(1, 3, 7, 4, 5, 6, 7)]
 newCases <- cases$confirmed - cases$recovered - cases$deaths
 ```
 
@@ -43,6 +44,38 @@ plot(x = dates, y = cases$difference,
 
 legend('topleft', legend = c('New cases'),
        col = c('blue'), lty = 1, lwd = 2.5)
+```
+
+
+## Deaths by date
+```{r, results='hide', message=FALSE, warning=FALSE}
+plot.new()
+
+plot(x = dates, y = dailyDeaths,
+     xlim = range(dates), ylim = range(dailyDeaths),
+     xlab = 'Date', ylab = 'Count',
+     type = 'l', lwd = 2.5, col = 'blue', lty = 1,
+     main = 'New Deaths')
+
+legend('topleft', legend = c('New deaths'),
+       col = c('blue'), lty = 1, lwd = 2.5)
+```
+
+## Daily cases vs daily deaths
+```{r, results='hide', message=FALSE, warning=FALSE}
+plot.new()
+
+plot(x = dates, y = newCases,
+     xlim = range(dates), ylim = range(c(dailyDeaths, newCases)),
+     xlab = 'Date', ylab = 'Count',
+     type = 'l', lwd = 2.5, col = 'red', lty = 1,
+     main = 'Daily cases vs daily deaths')
+
+par(new = TRUE)
+plot(x = dates, y = dailyDeaths, col = 'blue', axes = FALSE, xlab = 'Date', ylab = 'Count',
+     type = 'l', lwd = 2)
+axis(side = 4, at = pretty(range(dailyDeaths)))
+legend('topleft', legend = c('New cases', 'deaths'), col = c('red', 'blue'), lty = 1, lwd = 2.5)
 ```
 
 ## Cumulative statistics by date
