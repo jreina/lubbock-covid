@@ -65,8 +65,8 @@ legend('topleft', legend = c('New deaths'),
 ```{r, results='hide', message=FALSE, warning=FALSE}
 plot.new()
 
-plot(x = dates, y = newCases,
-     xlim = range(dates), ylim = range(c(dailyDeaths, newCases)),
+plot(x = dates, y = cases$difference,
+     xlim = range(dates), ylim = range(cases$difference),
      xlab = 'Date', ylab = 'Count',
      type = 'l', lwd = 2.5, col = 'red', lty = 1,
      main = 'Daily cases vs daily deaths')
